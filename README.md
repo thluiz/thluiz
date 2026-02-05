@@ -21,6 +21,8 @@
 - Critical integrations: **Central Bank, PIX, Bitcoin**  
 - Built **Jarvis AI Bot** (Microsoft Bot Framework)
 
+**⏮️ L'oreal, OI, Digipix, Banco do Brasil... (2004-2009)** _see resume_
+
 ---
 
 ## 🛠️ **Core Tech Stack**
