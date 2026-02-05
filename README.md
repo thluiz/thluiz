@@ -24,18 +24,19 @@
 ---
 
 ## 🛠️ **Core Tech Stack**
-```
-🌐 C#/.NET Core/Blazor • Azure (Functions, DevOps) • SQL Server
-🔬 Functional Languages: Elixir • F# • Javascript (Node.JS)
-☁️ Docker/Kubernetes • Microservices • CI/CD • TDD/DDD
-🎨 Angular/React • Legacy Evolution/Displacement (Knockout, Jquery...)
-```
+
+- 🌐 C#/.NET Core/Blazor • Azure (Functions, DevOps) • SQL Server
+- 🔬 Functional Languages: Elixir • F# • Javascript (Node.JS)
+- ☁️ Docker/Kubernetes • Microservices • CI/CD • TDD/DDD
+- 🎨 Angular/React • Legacy Evolution/Displacement (Knockout, Jquery...)
+
 
 ---
 
 ## 🌍 **Remote Ready**
 - **✅ 10+ years distributed teams**  
-- **✅ Fluent English**  
+- **✅ Fluent English**
+- **⌛ PST to EU hours**  
 
 ## How to reach me
 ```
@@ -48,7 +49,7 @@
 
 ## Fun facts ⚡:
 
-Currently studying Philosophy (Ethics, Politics, Economics) | Kung Fu Master
+Currently studying Philosophy (Ethics, Politics, Economics) • Kung Fu Master • Visual artist
 
 
 _*Last updated: Feb 2026*_
