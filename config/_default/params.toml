@@ -1,12 +1,12 @@
-colorScheme = "ocean"
+colorScheme = "noir"
 defaultAppearance = "dark"
-autoSwitchAppearance = true
+autoSwitchAppearance = false
 enableSearch = true
 enableCodeCopy = false
 disableTextInHeader = false
 
 [homepage]
-  layout = "profile"
+  layout = "custom"
   showRecent = false
 
 [article]
@@ -18,7 +18,7 @@ disableTextInHeader = false
   showBreadcrumbs = true
 
 [header]
-  layout = "basic"
+  layout = "fixed-fill-blur"
 
 [footer]
   showCopyright = true

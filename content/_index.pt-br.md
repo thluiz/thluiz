@@ -1,27 +1,37 @@
 ---
 title: "Thiago Silva"
+tagline: "Muitos caminhos, uma mesma busca — compreender como sistemas funcionam e ajudá-los a funcionar melhor."
+
+facets:
+  - title: "Kung Fu"
+    url: "/pt-br/kung-fu/"
+    image: "img/facets/kungfu.jpg"
+    description: "Moy Chi Yau Si — herdeiro de linhagem Ving Tsun, instrutor e praticante da filosofia marcial chinesa."
+
+  - title: "Filosofia"
+    url: "/pt-br/philosophy/"
+    image: "img/facets/philosophy.jpg"
+    description: "Explorando as interseções entre pensamento oriental, filosofia ocidental e a vida examinada."
+
+  - title: "Engenharia"
+    url: "/pt-br/engineering/"
+    image: "img/facets/engineering.jpg"
+    description: "Arquiteto de sistemas e tech lead construindo software resiliente e centrado em pessoas."
+
+  - title: "Podcast"
+    url: "/pt-br/podcast/"
+    image: "img/facets/podcast.jpg"
+    description: "Conversas sobre tecnologia, cultura e as ideias que moldam nosso mundo."
+
+  - title: "Mentoria"
+    url: "/pt-br/mentoring/"
+    image: "img/facets/mentoring.jpg"
+    description: "Orientando engenheiros e líderes em crescimento de carreira e desenvolvimento pessoal."
+
+  - title: "Escritos"
+    url: "/pt-br/writings/"
+    image: "img/facets/writings.jpg"
+    description: "Ensaios selecionados sobre tecnologia, artes marciais, filosofia e ofício."
 ---
 
-{{< lead >}}
-Muitos caminhos, uma mesma busca: compreender como sistemas funcionam e ajudá-los a funcionar melhor.
-{{< /lead >}}
-
----
-
-### [🥋 Kung Fu](/pt-br/kung-fu/)
-Moy Chi Yau Si — herdeiro de linhagem Ving Tsun, instrutor e praticante da filosofia marcial chinesa.
-
-### [📜 Filosofia](/pt-br/philosophy/)
-Explorando as interseções entre pensamento oriental, filosofia ocidental e a vida examinada.
-
-### [⚙️ Engenharia](/pt-br/engineering/)
-Arquiteto de sistemas e tech lead construindo software resiliente e centrado em pessoas.
-
-### [🎙️ Podcast](/pt-br/podcast/)
-Conversas sobre tecnologia, cultura e as ideias que moldam nosso mundo.
-
-### [🧭 Mentoria](/pt-br/mentoring/)
-Orientando engenheiros e líderes em crescimento de carreira e desenvolvimento pessoal.
-
-### [✍️ Escritos](/pt-br/writings/)
-Ensaios selecionados sobre tecnologia, artes marciais, filosofia e ofício.
+Não são vidas separadas. São facetas de uma mesma busca: compreender sistemas — sejam corpos humanos, arquiteturas de software, organizações ou ideias — e ajudá-los a funcionar melhor.
