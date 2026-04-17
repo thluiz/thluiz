@@ -3,7 +3,7 @@ defaultAppearance = "dark"
 autoSwitchAppearance = false
 enableSearch = true
 enableCodeCopy = false
-disableTextInHeader = false
+disableTextInHeader = true
 
 [homepage]
   layout = "custom"
