@@ -1,0 +1,77 @@
+{{ $disableImageOptimization := .Site.Params.disableImageOptimization | default false }}
+
+{{/* ── Hero Section ── */}}
+{{ $heroBg := resources.Get "img/hero-bg.jpg" }}
+{{ $profileImg := resources.Get "img/profile.png" }}
+<section class="relative -mx-6 sm:-mx-8 -mt-6 mb-16 overflow-hidden">
+  {{ if $heroBg }}
+    <div class="absolute inset-0">
+      <img src="{{ $heroBg.RelPermalink }}" alt="" class="h-full w-full object-cover nozoom" style="object-position: center 30%;">
+      <div class="absolute inset-0 bg-gradient-to-b from-neutral-900/70 via-neutral-900/60 to-neutral-900/90"></div>
+    </div>
+  {{ end }}
+  <div class="relative px-6 sm:px-8 py-24 md:py-32 lg:py-40 flex flex-col items-center text-center">
+    {{ if $profileImg }}
+      {{ $profileSmall := $profileImg.Fill "192x192 q96" }}
+      <img src="{{ $profileSmall.RelPermalink }}" alt="{{ .Site.Params.author.name }}"
+           class="h-28 w-28 md:h-36 md:w-36 rounded-full ring-4 ring-white/20 shadow-2xl mb-6 nozoom object-cover">
+    {{ end }}
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-3">
+      {{ .Site.Params.author.name | default .Site.Title }}
+    </h1>
+    {{ with .Site.Params.author.headline }}
+      <p class="text-lg md:text-xl text-neutral-300 max-w-xl mb-6 leading-relaxed">
+        {{ . | markdownify }}
+      </p>
+    {{ end }}
+    <div class="flex gap-4 text-2xl text-neutral-400">
+      {{ with .Site.Params.author.links }}
+        {{ range $links := . }}
+          {{ range $name, $url := $links }}
+            <a href="{{ $url | safeURL }}" target="_blank" rel="me noopener noreferrer"
+               class="hover:text-white transition-colors duration-200" aria-label="{{ $name | title }}" title="{{ $name | title }}">
+              {{ partial "icon.html" $name }}
+            </a>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{/* ── Tagline ── */}}
+<section class="max-w-3xl mx-auto text-center mb-20 px-4">
+  <p class="text-xl md:text-2xl text-neutral-500 dark:text-neutral-400 leading-relaxed italic">
+    {{ with .Params.tagline }}{{ . }}{{ end }}
+  </p>
+</section>
+
+{{/* ── Facets Grid ── */}}
+<section class="-mx-6 sm:-mx-8 mb-20 px-6 sm:px-8">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    {{ range .Params.facets }}
+      {{ $img := resources.Get .image }}
+      <a href="{{ .url }}" class="group relative block rounded-2xl overflow-hidden aspect-[4/3] shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+        {{ if $img }}
+          {{ $imgResized := $img.Fill "600x450 q85" }}
+          <img src="{{ $imgResized.RelPermalink }}" alt="{{ .title }}"
+               class="absolute inset-0 h-full w-full object-cover nozoom transition-transform duration-500 group-hover:scale-105">
+        {{ end }}
+        <div class="absolute inset-0 bg-gradient-to-t from-neutral-900/90 via-neutral-900/40 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-6">
+          <h3 class="text-xl font-bold text-white mb-1">{{ .title }}</h3>
+          <p class="text-sm text-neutral-300 leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            {{ .description }}
+          </p>
+        </div>
+      </a>
+    {{ end }}
+  </div>
+</section>
+
+{{/* ── About Teaser ── */}}
+<section class="max-w-3xl mx-auto mb-20 px-4">
+  <div class="prose dark:prose-invert mx-auto text-center">
+    {{ .Content }}
+  </div>
+</section>
