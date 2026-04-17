@@ -51,7 +51,7 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
     {{ range .Params.facets }}
       {{ $img := resources.Get .image }}
-      <a href="{{ .url }}" class="group block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 bg-neutral-800">
+      <a href="{{ .url }}" class="facet-card group block rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 bg-neutral-800">
         {{ if $img }}
           {{ $imgResized := $img.Fill "600x400 q85" }}
           <div class="relative aspect-[3/2] overflow-hidden">
