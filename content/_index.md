@@ -3,6 +3,11 @@ title: "Thiago Silva"
 tagline: "Multiple paths, one pursuit — understanding how systems work and helping them work better."
 
 facets:
+  - title: "Engineering"
+    url: "/engineering/"
+    image: "img/facets/engineering.jpg"
+    description: "Systems architect and tech lead building resilient, human-centered software."
+
   - title: "Kung Fu"
     url: "/kung-fu/"
     image: "img/facets/kungfu.jpg"
@@ -13,10 +18,10 @@ facets:
     image: "img/facets/philosophy.jpg"
     description: "Exploring the intersections of Eastern thought, Western philosophy, and the examined life."
 
-  - title: "Engineering"
-    url: "/engineering/"
-    image: "img/facets/engineering.jpg"
-    description: "Systems architect and tech lead building resilient, human-centered software."
+  - title: "Writings"
+    url: "/writings/"
+    image: "img/facets/writings.jpg"
+    description: "Selected essays on technology, martial arts, philosophy, and craft."
 
   - title: "Podcast"
     url: "/podcast/"
@@ -27,11 +32,6 @@ facets:
     url: "/mentoring/"
     image: "img/facets/mentoring.jpg"
     description: "Guiding engineers and leaders through career growth and personal development."
-
-  - title: "Writings"
-    url: "/writings/"
-    image: "img/facets/writings.jpg"
-    description: "Selected essays on technology, martial arts, philosophy, and craft."
 ---
 
 These are not separate lives. They are facets of the same pursuit: understanding systems — whether human bodies, software architectures, organizations, or ideas — and helping them work better.

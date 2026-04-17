@@ -1,6 +1,6 @@
 [[main]]
-  name = "About"
-  pageRef = "about"
+  name = "Engineering"
+  pageRef = "engineering"
   weight = 10
 
 [[main]]
@@ -14,8 +14,8 @@
   weight = 30
 
 [[main]]
-  name = "Engineering"
-  pageRef = "engineering"
+  name = "Writings"
+  pageRef = "writings"
   weight = 40
 
 [[main]]
@@ -29,6 +29,6 @@
   weight = 60
 
 [[main]]
-  name = "Writings"
-  pageRef = "writings"
+  name = "About"
+  pageRef = "about"
   weight = 70

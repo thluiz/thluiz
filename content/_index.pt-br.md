@@ -3,6 +3,11 @@ title: "Thiago Silva"
 tagline: "Muitos caminhos, uma mesma busca — compreender como sistemas funcionam e ajudá-los a funcionar melhor."
 
 facets:
+  - title: "Engenharia"
+    url: "/pt-br/engineering/"
+    image: "img/facets/engineering.jpg"
+    description: "Arquiteto de sistemas e tech lead construindo software resiliente e centrado em pessoas."
+
   - title: "Kung Fu"
     url: "/pt-br/kung-fu/"
     image: "img/facets/kungfu.jpg"
@@ -13,10 +18,10 @@ facets:
     image: "img/facets/philosophy.jpg"
     description: "Explorando as interseções entre pensamento oriental, filosofia ocidental e a vida examinada."
 
-  - title: "Engenharia"
-    url: "/pt-br/engineering/"
-    image: "img/facets/engineering.jpg"
-    description: "Arquiteto de sistemas e tech lead construindo software resiliente e centrado em pessoas."
+  - title: "Escritos"
+    url: "/pt-br/writings/"
+    image: "img/facets/writings.jpg"
+    description: "Ensaios selecionados sobre tecnologia, artes marciais, filosofia e ofício."
 
   - title: "Podcast"
     url: "/pt-br/podcast/"
@@ -27,11 +32,6 @@ facets:
     url: "/pt-br/mentoring/"
     image: "img/facets/mentoring.jpg"
     description: "Orientando engenheiros e líderes em crescimento de carreira e desenvolvimento pessoal."
-
-  - title: "Escritos"
-    url: "/pt-br/writings/"
-    image: "img/facets/writings.jpg"
-    description: "Ensaios selecionados sobre tecnologia, artes marciais, filosofia e ofício."
 ---
 
 Não são vidas separadas. São facetas de uma mesma busca: compreender sistemas — sejam corpos humanos, arquiteturas de software, organizações ou ideias — e ajudá-los a funcionar melhor.
