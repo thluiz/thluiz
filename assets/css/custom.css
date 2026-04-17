@@ -2,3 +2,9 @@
 nav a, nav span {
   white-space: nowrap;
 }
+
+/* Resize seal logo in header */
+header a img {
+  max-height: 1.75rem;
+  width: auto;
+}
