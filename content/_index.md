@@ -18,10 +18,10 @@ facets:
     image: "img/facets/philosophy.jpg"
     description: "Exploring the intersections of Eastern thought, Western philosophy, and the examined life."
 
-  - title: "Writings"
-    url: "/writings/"
-    image: "img/facets/writings.jpg"
-    description: "Selected essays on technology, martial arts, philosophy, and craft."
+  - title: "Tech Leadership"
+    url: "/tech-leadership/"
+    image: "img/facets/interviews.jpg"
+    description: "Building teams, technical interviews, code review culture, and the human side of engineering excellence."
 
   - title: "Podcast"
     url: "/podcast/"
