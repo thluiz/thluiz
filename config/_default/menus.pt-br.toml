@@ -1,0 +1,34 @@
+[[main]]
+  name = "Sobre"
+  pageRef = "about"
+  weight = 10
+
+[[main]]
+  name = "Kung Fu"
+  pageRef = "kung-fu"
+  weight = 20
+
+[[main]]
+  name = "Filosofia"
+  pageRef = "philosophy"
+  weight = 30
+
+[[main]]
+  name = "Engenharia"
+  pageRef = "engineering"
+  weight = 40
+
+[[main]]
+  name = "Podcast"
+  pageRef = "podcast"
+  weight = 50
+
+[[main]]
+  name = "Mentoria"
+  pageRef = "mentoring"
+  weight = 60
+
+[[main]]
+  name = "Escritos"
+  pageRef = "writings"
+  weight = 70

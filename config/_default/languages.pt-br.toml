@@ -1,0 +1,18 @@
+languageCode = "pt-BR"
+languageName = "Português"
+weight = 2
+title = "Thiago Silva"
+
+[params]
+  displayName = "PT"
+  isoCode = "pt-BR"
+  description = "Filósofo · Mestre de Kung Fu · Engenheiro de Sistemas · Podcaster · Mentor"
+
+[params.author]
+  name = "Thiago Silva"
+  headline = "Filósofo · Mestre de Kung Fu · Engenheiro de Sistemas · Podcaster · Mentor"
+  bio = "Estudo sistemas — sejam corpos humanos, arquiteturas de software, organizações ou ideias — e ajudo-os a funcionar melhor."
+  links = [
+    { github = "https://github.com/thluiz" },
+    { linkedin = "https://linkedin.com/in/thluiz" },
+  ]
