@@ -28,7 +28,3 @@
   pageRef = "mentoring"
   weight = 60
 
-[[main]]
-  name = "Sobre"
-  pageRef = "about"
-  weight = 70
