@@ -1,0 +1,4 @@
+/* Prevent menu items from wrapping */
+nav a, nav span {
+  white-space: nowrap;
+}
