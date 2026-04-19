@@ -70,7 +70,7 @@
           </div>
         {{ end }}
         <div class="p-5">
-          <h3 class="text-lg font-bold text-neutral-100 mb-1">{{ .title }}{{ if not $ready }} <span class="text-xs font-normal text-neutral-500 italic">· em breve</span>{{ end }}</h3>
+          <h3 class="text-lg font-bold text-neutral-100 mb-1">{{ .title }}{{ if not $ready }} <span class="text-xs font-normal text-neutral-500 italic">· {{ i18n "coming_soon" | default "coming soon" }}</span>{{ end }}</h3>
           <p class="text-sm text-neutral-400 leading-relaxed">
             {{ .description }}
           </p>
