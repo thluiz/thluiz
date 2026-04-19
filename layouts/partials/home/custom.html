@@ -51,21 +51,31 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
     {{ range .Params.facets }}
       {{ $img := resources.Get .image }}
+      {{ $ready := .ready | default false }}
+      {{ if $ready }}
       <a href="{{ .url }}" class="facet-card group block rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 bg-neutral-800">
+      {{ else }}
+      <div class="facet-card group block rounded-2xl overflow-hidden transition-all duration-300 bg-neutral-800 cursor-default" title="Coming soon">
+      {{ end }}
         {{ if $img }}
           {{ $imgResized := $img.Fill "600x400 q85" }}
           <div class="relative aspect-[3/2] overflow-hidden">
             <img src="{{ $imgResized.RelPermalink }}" alt="{{ .title }}"
-                 class="h-full w-full object-cover nozoom transition-transform duration-500 group-hover:scale-105">
+                 class="h-full w-full object-cover nozoom transition-transform duration-500 {{ if $ready }}group-hover:scale-105{{ end }} {{ if not $ready }}opacity-70{{ end }}">
+            {{ if not $ready }}
+              <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-neutral-900/40">
+                <span class="text-3xl drop-shadow-lg" role="img" aria-label="Coming soon">🚧</span>
+              </div>
+            {{ end }}
           </div>
         {{ end }}
         <div class="p-5">
-          <h3 class="text-lg font-bold text-neutral-100 mb-1">{{ .title }}</h3>
+          <h3 class="text-lg font-bold text-neutral-100 mb-1">{{ .title }}{{ if not $ready }} <span class="text-xs font-normal text-neutral-500 italic">· em breve</span>{{ end }}</h3>
           <p class="text-sm text-neutral-400 leading-relaxed">
             {{ .description }}
           </p>
         </div>
-      </a>
+      {{ if $ready }}</a>{{ else }}</div>{{ end }}
     {{ end }}
   </div>
 </section>
