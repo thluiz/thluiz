@@ -6,12 +6,12 @@ title = "Thiago Silva"
 [params]
   displayName = "PT"
   isoCode = "pt-BR"
-  description = "Engenheiro · Kung Fu · Filósofo · Tech Leader · Podcaster · Mentor"
+  description = "Engenharia · Kung Fu · Filosofia · Tech Leadership · Podcast · Mentoria"
   logo = "img/seal.png"
 
 [params.author]
   name = "Thiago Silva"
-  headline = "Engenheiro · Kung Fu · Filósofo · Tech Leader · Podcaster · Mentor"
+  headline = "Engenharia · Kung Fu · Filosofia · Tech Leadership · Podcast · Mentoria"
   bio = "Estudo sistemas — sejam corpos humanos, arquiteturas de software, organizações ou ideias — e ajudo-os a funcionar melhor."
   links = [
     { github = "https://github.com/thluiz" },
