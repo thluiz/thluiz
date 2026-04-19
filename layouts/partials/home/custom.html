@@ -20,7 +20,7 @@
       {{ .Site.Params.author.name | default .Site.Title }}
     </h1>
     {{ with .Site.Params.author.headline }}
-      <p class="text-sm md:text-base text-neutral-800 max-w-xl leading-relaxed px-6 py-2 rounded-full backdrop-blur-xl bg-white/80 border border-white/40">
+      <p class="text-sm md:text-base text-white font-semibold max-w-xl leading-relaxed px-6 py-2 rounded-full backdrop-blur-xl bg-neutral-900/60 border-0">
         {{ . | markdownify }}
       </p>
     {{ end }}
