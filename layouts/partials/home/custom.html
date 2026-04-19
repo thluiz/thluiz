@@ -10,7 +10,7 @@
       <div class="absolute inset-0 bg-gradient-to-b from-neutral-900/20 via-transparent to-neutral-900/90"></div>
     </div>
   {{ end }}
-  <div class="relative px-6 sm:px-8 pt-8 pb-8 flex flex-col items-center text-center" style="min-height: calc(100vh - 78px);">
+  <div class="relative px-6 sm:px-8 pb-6 sm:pt-8 sm:pb-8 flex flex-col items-center text-center justify-center sm:justify-start" style="min-height: calc(100vh - 78px);">
     {{ if $profileImg }}
       {{ $profileSmall := $profileImg.Fill "192x192 q96" }}
       <img src="{{ $profileSmall.RelPermalink }}" alt="{{ .Site.Params.author.name }}"
@@ -20,16 +20,16 @@
       {{ .Site.Params.author.name | default .Site.Title }}
     </h1>
     {{ with .Site.Params.author.headline }}
-      <p class="text-sm md:text-base text-neutral-800 max-w-xl leading-relaxed px-6 py-2 rounded-full backdrop-blur-xl bg-white/50 border border-white/30">
+      <p class="text-sm md:text-base text-neutral-800 max-w-xl leading-relaxed px-6 py-2 rounded-full backdrop-blur-xl bg-white/80 border border-white/40">
         {{ . | markdownify }}
       </p>
     {{ end }}
-    <div class="flex gap-4 text-2xl mt-4 px-5 py-2 rounded-full backdrop-blur-xl bg-white/50 border border-white/30">
+    <div class="flex gap-4 text-2xl mt-4">
       {{ with .Site.Params.author.links }}
         {{ range $links := . }}
           {{ range $name, $url := $links }}
             <a href="{{ $url | safeURL }}" target="_blank" rel="me noopener noreferrer"
-               class="text-neutral-700 hover:text-neutral-900 transition-colors duration-200" aria-label="{{ $name | title }}" title="{{ $name | title }}">
+               class="text-white hover:text-neutral-200 transition-colors duration-200" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));" aria-label="{{ $name | title }}" title="{{ $name | title }}">
               {{ partial "icon.html" $name }}
             </a>
           {{ end }}
